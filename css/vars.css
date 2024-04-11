@@ -1,0 +1,25 @@
+@font-face {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 400;
+    src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+  }
+  
+:root {
+    --body-text: #191919;
+    --body-bg: #F8F6F5;
+    --text-inv: #FFF;
+
+    --high: #BAE4AF;
+  
+    --link-color: #EF7918;
+  
+    --main-color: #685A48;
+    --main-light: #F0EDE7;
+    --n-dark: #000;
+    --n-light: #EEE;
+    --n-medium1: #CCC;
+    --n-medium: #666;
+  
+    --stack: system-ui;
+  }

@@ -1,0 +1,18 @@
+/* --------------------------------------------------------------------
+               	A Embalagem Logistica
+               	Media queries
+          		Ge Ricci, 2024
+-------------------------------------------------------------------- */
+
+@media screen and (min-width: 1000px) {
+    #container.active {
+        margin-left: 380px;
+    }
+    
+    header.active {left: 380px;}
+
+    p.picture.float {
+        float: right;
+        margin: 1.5rem -4.5rem 1.5rem 1.5rem;
+    }
+}
