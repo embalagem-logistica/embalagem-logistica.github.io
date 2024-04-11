@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Tecnologia da embalagem logistica" />
+    <meta name="theme-color" content="#006D6D" />
+    <meta property="og:url" content="{{ogUrl}}" />
+    <meta property="og:title" content="{{ ogTitle }}" />
+    <meta property="description" content="{{ ogDescription}}" />
+    <meta property="og:description" content="{{ ogDescription}}" />
+    <meta property="og:image" content="{{ogImage}}" />
+    <link href="/img/favicon.svg" type="image/svg+xml" rel="icon" />
+    <link href="/img/favicon.png" type="image/png" rel="icon" />
+    <title>{{ ogTitle }}: Tecnologia da embalagem logistica</title>
+
+    <link href="/css/main.css" rel="stylesheet" media="all" />
+    <link href="/css/queries.css" rel="stylesheet" media="all" />
+    <link rel="manifest" href="manifest.json" />
+</head>
+
+<body {% if currSection == "index" %} id="home" {% endif %}>
+    <div id="container">
+        <!-- PAGE HEADER -->
+        <header>
+            <h1>Tecnologia da embalagem logistica</h1>
+            <button id="menu-control" type="button" aria-label="Abrir menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" heigth="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path>
+                </svg>
+            </button>
+            <nav id="menu" aria-labelledby="my-pagination">
+                <h2 id="my-pagination">Sumário</h2>
+                <button id="menu-close" type="button" aria-label="Fechar menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" heigth="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z">
+                        </path>
+                    </svg>
+                </button>
+                <ol>
+                    <li><a href="index.html" {% if currSection=="index" %} aria-current="page" {% endif %}>
+                        Introdução</a>
+                    </li>
+                    <li><a href="conceitos-gerais.html" {% if currSection=="conceitos-gerais" %} aria-current="page" {% endif %}>
+                        Conceitos gerais</a>
+                    </li>
+                    <li><a href="minimizacao-de-custos.html" {% if currSection=="minimizacao-de-custos" %} aria-current="page" {% endif %}>
+                        A minimização de custos</a>
+                    </li>
+                    <li><a href="o-produto-no-projeto-de-sua-embalagem.html" {% if currSection=="o-produto-no-projeto-de-sua-embalagem" %} aria-current="page" {% endif %}>
+                            O produto no projeto de sua embalagem</a>
+                    </li>
+                    <li><a href="condicoes-fisicas.html" {% if currSection=="condicoes-fisicas" %}
+                            aria-current="page" {% endif %}>
+                            Condições físicas da distribuição física</a>
+                    </li>
+                    <li><a href="impermeabilizacao-de-embalagem.html" {% if currSection=="impermeabilizacao-de-embalagem" %} aria-current="page" {% endif %}>
+                            Impermeabilização de embalagem</a>
+                    </li>
+                    <li><a href="projeto-da-embalagem-logistica.html" {% if currSection=="projeto-da-embalagem-logistica" %}
+                            aria-current="page" {% endif %}>
+                            O projeto da embalagem logística</a>
+                    </li>
+                    <li><a href="dimensionamento-geometrico.html" {% if currSection=="dimensionamento-geometrico" %}
+                            aria-current="page" {% endif %}>
+                            Dimensionamento geométrico</a>
+                    </li>
+                    <li><a href="dimensionamento-estrutural.html" {% if currSection=="dimensionamento-estrutural" %} aria-current="page" {%
+                            endif %}>
+                            Dimensionamento estrutural</a>
+                    </li>
+                    <li><a href="dimensionamento-das-protecoes.html" {% if currSection=="dimensionamento-das-protecoes" %} aria-current="page" {%
+                            endif %}>
+                            Dimensionamento das proteções</a>
+                    </li>
+                    <li><a href="materiais-da-embalagem-logistica.html" {% if currSection=="materiais-da-embalagem-logistica" %}
+                            aria-current="page" {% endif %}>
+                            Materiais da embalagem logística</a>
+                    </li>
+                    <li><a href="embalagem-logistica-e-meio-ambiente.html" {% if currSection=="embalagem-logistica-e-meio-ambiente" %}
+                            aria-current="page" {% endif %}>
+                            Embalagem logística e meio ambiente</a>
+                    </li>
+                    <li><a href="estudos-de-caso.html" {% if currSection=="estudos-de-caso" %}
+                            aria-current="page" {% endif %}>
+                            Estudos de caso</a>
+                    </li>
+                </ol>
+            </nav>  
+        </header>
+
+        <div id="wrapper">
+            <main>
+                {{ content }}
+            </main>
+        </div>
+
+        <hr />
+
+        <footer>
+            <p class="copyright">Ernesto Pichler, 2024</p>
+        </footer>
+    </div>
+    <!-- /container -->
+
+    <script src="/js/nav.js"></script>
+    <script>
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", function () {
+                navigator.serviceWorker
+                    .register("/sw.js")
+                    .then(function (registration) {
+                        // Registration was successful
+                        console.log("ServiceWorker registration successful with scope: ", registration
+                            .scope);
+                    })
+                    .catch(function (err) {
+                        // registration failed :(
+                        console.log("ServiceWorker registration failed: ", err);
+                    });
+            });
+        }
+    </script>
+</body>
+
+</html>
