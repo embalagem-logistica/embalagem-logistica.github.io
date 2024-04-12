@@ -4,6 +4,15 @@
           		Ge Ricci, 2024
 -------------------------------------------------------------------- */
 
+@media screen and (min-width: 800px) {
+    figure {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(250px, auto));
+        align-items: center;
+        gap: 1rem 1.5rem;
+    }
+}
+
 @media screen and (min-width: 1000px) {
     #container.active {
         margin-left: 380px;
@@ -14,5 +23,12 @@
     p.picture.float {
         float: right;
         margin: 1.5rem -4.5rem 1.5rem 1.5rem;
+    }
+
+    figure {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(250px, auto));
+        align-items: center;
+        gap: 1rem 1.5rem;
     }
 }
