@@ -286,6 +286,10 @@ nav#menu a:hover, nav#menu a[aria-current] {
 }
 
 
+/* ------------------------------ MATHML ---------------------------- */
+
+mn, mi, mo {display: inline-block;}
+
 /* ------------------------------ ARTICLES ---------------------------- */
 
 .sr-only {

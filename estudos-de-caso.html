@@ -149,219 +149,257 @@ ogImage:
     <p>A área total de papelão, da caixa e dos reforços, será:</p>
 
     
-    <math class="block">
-        <mi>S</mi> 
-        <mo>=</mo> 
-        <mn>2</mn>
-            <mo>[</mo>
-            <mo>(</mo>
-            <mi>C</mi>
-             <mo>+</mo> 
-             <mi>L</mi>
-             <mo>)</mo>
-             <mo>(</mo>
-                <mi>A</mi> 
-                <mo>+</mo> 
-                <mi>L</mi>
-            <mo>)</mo> 
-            <mo>+</mo> 
-            <mi>L</mi>
-            <mo>(</mo>
-            <mi>C</mi> 
-            <mo>+</mo> 
-            <mi>L</mi>
-            <mo>)</mo>
-            <mo>]</mo>
+    <math class="block" xmlns="http://www.w3.org/1998/Math/MathML">
+        <semantics>
+            <mrow>
+                <mi>S</mi> 
+                <mo>=</mo> 
+                <mn>2</mn>
+                    <mo>[</mo>
+                    <mo>(</mo>
+                    <mi>C</mi>
+                    <mo>+</mo> 
+                    <mi>L</mi>
+                    <mo>)</mo>
+                    <mo>(</mo>
+                        <mi>A</mi> 
+                        <mo>+</mo> 
+                        <mi>L</mi>
+                    <mo>)</mo> 
+                    <mo>+</mo> 
+                    <mi>L</mi>
+                    <mo>(</mo>
+                    <mi>C</mi> 
+                    <mo>+</mo> 
+                    <mi>L</mi>
+                    <mo>)</mo>
+                    <mo>]</mo>
+            </mrow>
+        </semantics>
     </math>
 
-    <math class="block">
-        <mi>S</mi> 
-        <mo>/</mo> 
-        <mn>2</mn> 
-        <mo>=</mo>
-         <mn>2</mn> 
-         <msup>
-            <mi>L</mi>
-            <mn>2</mn>
-         </msup> 
-         <mo>+</mo> 
-         <mn>2</mn>
-         <mi>CL</mi> 
-         <mo>+</mo> 
-         <mi>LA</mi> 
-         <mo>+</mo> 
-         <mi>CA</mi>
+    <math class="block" xmlns="http://www.w3.org/1998/Math/MathML">
+        <semantics>
+            <mrow>
+                <mi>S</mi> 
+                <mo>/</mo> 
+                <mn>2</mn> 
+                <mo>=</mo>
+                <mn>2</mn> 
+                <msup>
+                    <mi>L</mi>
+                    <mn>2</mn>
+                </msup> 
+                <mo>+</mo> 
+                <mn>2</mn>
+                <mi>C</mi>
+                <mi>L</mi>
+                <mo>+</mo> 
+                <mi>L</mi>
+                <mi>A</mi>
+                <mo>+</mo> 
+                <mi>C</mi>
+                <mi>A</mi>
+            </mrow>
+        </semantics>
     </math>
 
     <p>Introduzindo o volume:</p>
 
-    <math class="block">
-        <mi>V</mi> 
-        <mo>=</mo>
-        <mi>C</mi> <mi>L</mi> <mi>A</mi> 
+    <math class="block" xmlns="http://www.w3.org/1998/Math/MathML">
+        <semantics>
+            <mrow>
+                <mi>V</mi> 
+                <mo>=</mo>
+                <mi>C</mi> 
+                <mi>L</mi> 
+                <mi>A</mi> 
+            </mrow>
+        </semantics>
     </math>
-    <math class="block">
-        <mi>A</mi> 
-        <mo>=</mo>
-        <mi>V</mi> 
-        <mo>/</mo>
-        <mi>C</mi>
+    <math class="block" xmlns="http://www.w3.org/1998/Math/MathML">
+        <semantics>
+            <mrow>
+                <mi>A</mi> 
+                <mo>=</mo>
+                <mi>V</mi> 
+                <mo>/</mo>
+                <mi>C</mi>
+            </mrow>
+        </semantics>
     </math>
-    <math class="block">        
-        <mi>S</mi>
-        <mo>/</mo>
-        <mn>2</mn>
-        <mo>=</mo>
-        <mn>2</mn>
-        <msup>
-            <mi>L</mi>
+    <math class="block" xmlns="http://www.w3.org/1998/Math/MathML"> 
+        <mrow>       
+            <mi>S</mi>
+            <mo>/</mo>
             <mn>2</mn>
-        </msup>
-        <mo>+</mo>
-        <mn>2</mn>
-        <mi>CL</mi>
-        <mo>+</mo>
-        <mi>V</mi> <mo>/</mo> <mi>C</mi> 
-        <mo>+</mo> 
-        <mi>V</mi> <mo>/</mo> <mi>L</mi>
+            <mo>=</mo>
+            <mn>2</mn>
+            <msup>
+                <mi>L</mi>
+                <mn>2</mn>
+            </msup>
+            <mo>+</mo>
+            <mn>2</mn>
+            <mi>C</mi>
+            <mi>L</mi>
+            <mo>+</mo>
+            <mi>V</mi> <mo>/</mo> <mi>C</mi> 
+            <mo>+</mo> 
+            <mi>V</mi> <mo>/</mo> <mi>L</mi>
+        </mrow>
     </math>
    
     <p>Minimização de <em>S</em>:</p>
    
     <math class="block">
-        <mfrac>
-            <mrow>
-                <mn>δ</mn> 
-                <mi>S</mi> <mo>/</mo> <mn>2</mn>
-            </mrow>
-            <mrow>
-                <mn>δ</mn>
-                <mi>L</mi>
-            </mrow>
-        </mfrac>
-        <mo>=</mo>
-        <mn>4</mn>
-        <mi>L</mi>
-        <mo>+</mo>
-        <mn>2</mn>
-        <mi>C</mi>
-        <mo>-</mo>
-        <mi>V</mi>
-        <mo>/</mo>
-        <msup>
+        <mrow>
+            <mfrac>
+                <mrow>
+                    <mn>δ</mn> 
+                    <mi>S</mi> <mo>/</mo> <mn>2</mn>
+                </mrow>
+                <mrow>
+                    <mn>δ</mn>
+                    <mi>L</mi>
+                </mrow>
+            </mfrac>
+            <mo>=</mo>
+            <mn>4</mn>
             <mi>L</mi>
+            <mo>+</mo>
             <mn>2</mn>
-        </msup>
-        <mo>=</mo>
-        <mn>0</mn>
+            <mi>C</mi>
+            <mo>-</mo>
+            <mi>V</mi>
+            <mo>/</mo>
+            <msup>
+                <mi>L</mi>
+                <mn>2</mn>
+            </msup>
+            <mo>=</mo>
+            <mn>0</mn>
+        </mrow>
     </math>
 
     <math class="block">
-        <mfrac>
-            <mrow>
-                <mn>δ</mn>
-                <mi>S</mi>
-                <mo>/</mo>
-                <mn>2</mn>
-            </mrow>
-            <mrow>
-                <mn>δ</mn>
-                <mi>C</mi>
-            </mrow>
-        </mfrac>
-        <mo>=</mo>
-        <mn>2</mn>
-        <mi>L</mi>
-        <mo>-</mo>
-        <mi>V</mi>
-        <mo>/</mo>
-        <msup>
-            <mi>C</mi>
+        <mrow>
+            <mfrac>
+                <mrow>
+                    <mn>δ</mn>
+                    <mi>S</mi>
+                    <mo>/</mo>
+                    <mn>2</mn>
+                </mrow>
+                <mrow>
+                    <mn>δ</mn>
+                    <mi>C</mi>
+                </mrow>
+            </mfrac>
+            <mo>=</mo>
             <mn>2</mn>
-        </msup>
-        <mo>=</mo>
-        <mn>0</mn>
+            <mi>L</mi>
+            <mo>-</mo>
+            <mi>V</mi>
+            <mo>/</mo>
+            <msup>
+                <mi>C</mi>
+                <mn>2</mn>
+            </msup>
+            <mo>=</mo>
+            <mn>0</mn>
+        </mrow>
     </math>
     
     <math class="block">
-        <mn>2</mn>
-        <mi>L</mi>
-        <mo>+</mo>
-        <mi>C</mi>
-        <mo>=</mo>
-        <mi>V</mi>
-        <mo>/</mo>
-        <mn>2</mn>
-        <msup>
+        <mrow>
+            <mn>2</mn>
             <mi>L</mi>
+            <mo>+</mo>
+            <mi>C</mi>
+            <mo>=</mo>
+            <mi>V</mi>
+            <mo>/</mo>
             <mn>2</mn>
-        </msup>
+            <msup>
+                <mi>L</mi>
+                <mn>2</mn>
+            </msup>
+        </mrow>
     </math>
 
     <math class="block">
-        <mi>V</mi>
-        <mo>=</mo>
-        <mn>2</mn>
-        <msup>
-            <mrow><mi>L</mi><mi>C</mi></mrow>
+        <mrow>
+            <mi>V</mi>
+            <mo>=</mo>
             <mn>2</mn>
-        </msup>
-        <mo>=</mo>
-        <mi>C</mi><mi>L</mi><mi>A</mi>
+            <msup>
+                <mrow><mi>L</mi><mi>C</mi></mrow>
+                <mn>2</mn>
+            </msup>
+            <mo>=</mo>
+            <mi>C</mi><mi>L</mi><mi>A</mi>
+        </mrow>
     </math>
 
     <math class="block">
-        <mi>A</mi>
-        <mo>=</mo>
-        <mn>2</mn>
-        <mi>C</mi>
+        <mrow>
+            <mi>A</mi>
+            <mo>=</mo>
+            <mn>2</mn>
+            <mi>C</mi>
+        </mrow>
     </math>
 
     <math class="block">
-        <mi>L</mi>
-        <mo>=</mo>
-        <mfrac>
-            <mrow>
-                <mo>-</mo>
-                <mi>C</mi>
-                <mo>&#177;</mo>
-                <msqrt>
-                    <msup>
-                        <mi>C</mi>
+        <mrow>
+            <mi>L</mi>
+            <mo>=</mo>
+            <mfrac>
+                <mrow>
+                    <mo>-</mo>
+                    <mi>C</mi>
+                    <mo>&#177;</mo>
+                    <msqrt>
+                        <msup>
+                            <mi>C</mi>
+                            <mn>2</mn>
+                        </msup>
+                        <mo>+</mo>
+                        <mn>4</mn>
+                        <mo>&times;</mo>
                         <mn>2</mn>
-                    </msup>
-                    <mo>+</mo>
-                    <mn>4</mn>
-                    <mo>&times;</mo>
+                        <mo>&times;</mo>
+                        <msup>
+                            <mi>C</mi>
+                            <mn>2</mn>
+                        </msup>
+                    </msqrt>
+                </mrow>
+                <mrow>
                     <mn>2</mn>
                     <mo>&times;</mo>
-                    <msup>
-                        <mi>C</mi>
-                        <mn>2</mn>
-                    </msup>
-                </msqrt>
-            </mrow>
-            <mrow>
+                    <mn>2</mn>
+                </mrow>
+            </mfrac>
+            <mo>=</mo>
+            <mfrac>
+                <mi>C</mi>
                 <mn>2</mn>
-                <mo>&times;</mo>
-                <mn>2</mn>
-            </mrow>
-        </mfrac>
-        <mo>=</mo>
-        <mfrac>
-            <mi>C</mi>
-            <mn>2</mn>
-        </mfrac>
+            </mfrac>
+        </mrow>
     </math>
 
     <math class="block">
-        <mi>A</mi> 
-        <mo>=</mo>
-        <mn>2</mn>
-        <mi>C</mi> 
-        <mo>=</mo>
-        <mn>4</mn>
-        <mi>L</mi>
+        <mrow>
+            <mi>A</mi> 
+            <mo>=</mo>
+            <mn>2</mn>
+            <mi>C</mi> 
+            <mo>=</mo>
+            <mn>4</mn>
+            <mi>L</mi>
+        </mrow>
     </math>
     
     
@@ -378,56 +416,73 @@ ogImage:
     com espessura de 6,5mm, a altura interna útil será 1150 &mdash; 6 &times; 6,5 = 1110mm.</p>
 
     <math class="block">
-        <mi>A</mi> 
-        <mo>=</mo> 
-        <mn>1110</mn><ms>mm</ms>
+        <mrow>
+            <mi>A</mi> 
+            <mo>=</mo> 
+            <mn>1110</mn><ms>mm</ms>
+        </mrow>
     </math>
 
     <math class="block">
-        <mi>C<mi> 
-        <mo>&times;</mo> 
-        <mi>L</mi>  
-        <mo>=</mo>  
-        <mn>0,183</mn>  
-        <mo>/</mo> 
-        <mn>1,11</mn>  
-        <mo>=</mo> 
-        <mn>0,165</mn>
+        <mrow>
+            <mi>C<mi> 
+            <mo>&times;</mo> 
+            <mi>L</mi>  
+            <mo>=</mo>  
+            <mn>0,183</mn>  
+            <mo>/</mo> 
+            <mn>1,11</mn>  
+            <mo>=</mo> 
+            <mn>0,165</mn>
+        </mrow>
     </math>
 
     <math class="block">
-        <mi>C</mi> 
-        <mo>=</mo>
-        <mn>2</mn> 
-        <mi>L</mi> 
+        <mrow>
+            <mi>C</mi> 
+            <mo>=</mo>
+            <mn>2</mn> 
+            <mi>L</mi> 
+        </mrow>
     </math>
     <math class="block">
-        <mn>2</mn>
-        <mi>L</mi>
-        <mo>=</mo>
-        <mn>0,165</mn>
-        <mo>/</mo>
-        <mi>L</mi>
-    </math>
-    <math class="block">
-        <msup>
-            <mi>L</mi>
+        <mrow>
             <mn>2</mn>
-        </msup>
-        <mo>=</mo>
-        <mn>0,165</mn>
-        <mo>/</mo>
-        <mn>2</mn>
+            <mi>L</mi>
+            <mo>=</mo>
+            <mn>0,165</mn>
+            <mo>/</mo>
+            <mi>L</mi>
+        </mrow>
     </math>
     <math class="block">
-        <mi>L</mi>
-        <mo>=</mo>
-        <mn>287</mn>
-        <ms>mm</ms>
+        <mrow>
+            <msup>
+                <mi>L</mi>
+                <mn>2</mn>
+            </msup>
+            <mo>=</mo>
+            <mn>0,165</mn>
+            <mo>/</mo>
+            <mn>2</mn>
+        </mrow>
+    </math>
+    <math class="block">
+        <mrow>
+            <mi>L</mi>
+            <mo>=</mo>
+            <mn>287</mn>
+            <ms>mm</ms>
+        </mrow>
     </math>
 
     <math class="block">
-        <mi>C</mi> <mo>=</mo> <mn>574</mn><ms>mm</ms>
+        <mrow>
+            <mi>C</mi> 
+            <mo>=</mo> 
+            <mn>574</mn>
+            <ms>mm</ms>
+        </mrow>
     </math>
 
     <p>As medidas externas serão 587 x 299 x 1150. Caberão, num contêiner de 12m com altura útil de 2600mm 

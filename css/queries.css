@@ -25,6 +25,11 @@
         margin: 1.5rem -4.5rem 1.5rem 1.5rem;
     }
 
+        p.picture.float-l {
+            float: left;
+            margin: 1.5rem 1.5rem 1.5rem -4.5rem;
+        }
+
     figure {
         display: grid;
         grid-template-columns: repeat(2, minmax(250px, auto));
