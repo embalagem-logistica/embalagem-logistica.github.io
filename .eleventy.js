@@ -3,6 +3,7 @@ const htmlmin = require("html-minifier");
 module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("manifest.json");
+  eleventyConfig.addPassthroughCopy("robots.txt");
   eleventyConfig.addPassthroughCopy("img/**/*.*");
 
   eleventyConfig.setTemplateFormats(["md", "html", "rss", "njk"]);

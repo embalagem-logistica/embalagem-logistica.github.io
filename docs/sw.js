@@ -1,7 +1,18 @@
-const cacheName = 'devfest-lille';
+const cacheName = 'embalagemLog';
 
-self.addEventListener('install', function(e) {
+const filesToCache = [
+  '/',
+  '/css/main.css',
+  '/css/vars.css',
+  '/css/queries.css'
+];
 
+self.addEventListener('install', function (e) {
+  e.waitUntil(
+    caches.open(cacheName).then(function (cache) {
+      return cache.addAll(filesToCache);
+    })
+  );
 });
 
 self.addEventListener('activate', function(e) {
