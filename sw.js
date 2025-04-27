@@ -4,7 +4,8 @@ const filesToCache = [
   '/',
   '/css/main.css',
   '/css/vars.css',
-  '/css/queries.css'
+  '/css/queries.css',
+  '/js/nav.js'
 ];
 
 self.addEventListener('install', function (e) {
